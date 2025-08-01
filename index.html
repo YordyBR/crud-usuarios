@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD de Usuarios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión de Usuarios</h1>
+  <form id="user-form">
+    <input type="text" id="name" placeholder="Nombre" required>
+    <input type="email" id="email" placeholder="Correo" required>
+    <button type="submit">Agregar Usuario</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="user-list"></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
