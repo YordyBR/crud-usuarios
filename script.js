@@ -20,7 +20,7 @@ function renderUsers() {
 function saveUsers() {
   localStorage.setItem("users", JSON.stringify(users));
 }
-
+// validacion del correo electronico
 document.getElementById("user-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const name = document.getElementById("name").value.trim();
