@@ -1,5 +1,6 @@
+// dasboard de usuario
 let users = JSON.parse(localStorage.getItem("users")) || [];
-
+// Funcion para que funcione el dashboard del log in
 function renderUsers() {
   const list = document.getElementById("user-list");
   list.innerHTML = "";
@@ -16,7 +17,7 @@ function renderUsers() {
     list.appendChild(row);
   });
 }
-
+// Validacion del usuario
 function saveUsers() {
   localStorage.setItem("users", JSON.stringify(users));
 }
@@ -32,7 +33,7 @@ document.getElementById("user-form").addEventListener("submit", function(e) {
     e.target.reset();
   }
 });
-
+// Aqui se eliminan los usuarios
 function deleteUser(index) {
   users.splice(index, 1);
   saveUsers();
