@@ -18,6 +18,7 @@ function renderUsers() {
   });
 }
 // Validacion del usuario
+// Validacion de correo electronico
 function saveUsers() {
   localStorage.setItem("users", JSON.stringify(users));
 }
