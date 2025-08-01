@@ -1,3 +1,4 @@
+// dasboard de usuario
 let users = JSON.parse(localStorage.getItem("users")) || [];
 // Funcion para que funcione el dashboard del log in
 function renderUsers() {
