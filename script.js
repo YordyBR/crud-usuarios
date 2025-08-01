@@ -33,7 +33,7 @@ document.getElementById("user-form").addEventListener("submit", function(e) {
     e.target.reset();
   }
 });
-// Aqui se eliminan los usuarios
+// Eliminar Usuario
 function deleteUser(index) {
   users.splice(index, 1);
   saveUsers();
