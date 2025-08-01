@@ -16,7 +16,7 @@ function renderUsers() {
     list.appendChild(row);
   });
 }
-// Validacion del usuario
+// Validacion de usuarios
 function saveUsers() {
   localStorage.setItem("users", JSON.stringify(users));
 }
