@@ -1,5 +1,5 @@
 let users = JSON.parse(localStorage.getItem("users")) || [];
-
+// Funcion para que funcione el dashboard del log in
 function renderUsers() {
   const list = document.getElementById("user-list");
   list.innerHTML = "";
